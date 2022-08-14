@@ -17,6 +17,16 @@ const Car = (props) => {
     <>
       <Container maxWidth="sm">
         <h1>{car.Name}</h1>
+        <Stack direction="row" spacing={1}></Stack>
+
+        <Chip label={"MPG: " + car.Miles_per_Gallon} />
+        <Chip label={"Cylinders: " + car.Cylinders} />
+        <Chip label={"Displacement: " + car.Displacement} />
+        <Chip label={"Horsepower: " + car.Horsepower} />
+        <Chip label={car.Weight_in_lbs + " lbs"} />
+        <Chip label={"Acceleration:" + car.Acceleration} />
+        <Chip label={"Year: " + car.Year} />
+        <Chip label={"Origin: " + car.Origin} />
       </Container>
     </>
   );
